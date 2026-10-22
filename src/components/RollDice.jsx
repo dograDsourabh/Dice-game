@@ -11,7 +11,7 @@ const RollDice = ({ currentDice, onRoll, error, reset, rollId }) => {
         aria-label={`Roll dice; current result is ${currentDice}`}
       >
         <img
-          src={`/images/dice/dice_${currentDice}.png`}
+          src={`${import.meta.env.BASE_URL}images/dice/dice_${currentDice}.png`}
           alt={`Dice showing ${currentDice}`}
         />
       </button>

@@ -28,7 +28,7 @@ transition: all 0.3s ease-in-out;
 const StartGame = ({ onStart }) => {
   return (
     <Container>
-      <img src="/images/Dices.png" alt="Dice game" />
+      <img src={`${import.meta.env.BASE_URL}images/Dices.png`} alt="Dice game" />
       <div className="content">
         <h1> Dice Game</h1>
         <Button type="button" onClick={onStart}>Start Game</Button>
